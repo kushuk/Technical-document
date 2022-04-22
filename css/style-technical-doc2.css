@@ -1,0 +1,231 @@
+/**  global **/
+
+:root { 
+    --primary-clr: rgb(100, 86, 124);
+    --secondary-clr: rgb(187, 173, 173);
+    --bg1-clr: coral;
+    --bg2-clr: rgb(151, 149, 144);
+    --titles-clr: black;
+    --texts-clr: rgb(37, 24, 24);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100vw;  
+    scroll-behavior: smooth;     
+    top: 0;
+    left: 0;        
+}
+
+.body-container {
+    width: 100%;
+    height: 100%;      
+    /* Display multi Browsers support*/ 
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px 10px;
+    position: relative;
+}
+
+.div-indexs { 
+    width: 30%;  
+    height: 100%;
+    margin: auto; 
+    align-items: flex-start;
+    -moz-box-flex: 1 1 auto;
+    -webkit-box-flex: 1 1 auto ;
+    -ms-flex: 1 1 auto;   
+    flex: 1 1 auto;
+    order: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.div-documents {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    -moz-box-flex: 1 1 auto;
+    -webkit-box-flex: 1 1 auto ;
+    -ms-flex: 1 1 auto;   
+    flex: 1 1 auto; 
+    order: 2;  
+    position: absolute; 
+    top: 0;  
+    right: 0;
+}
+
+
+/**  global **/
+
+
+/**  Navigation **/
+#nav-bar { 
+    margin: auto;
+    height: 100%;  
+    color: var(--texts-clr);
+    background-color: var(--bg2-clr); 
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-self: flex-end; 
+   
+}
+
+#nav-bar ul {
+    display: block;
+}
+
+#nav-bar ul li {
+    list-style: none;
+}
+/**  Navigation **/
+
+
+/**  Main content **/
+
+#main-doc {
+    padding: 25px;
+    min-height: 100%;   
+    max-width: 1200px; 
+    display: block;
+    color: black;
+    background-color: var(--bg1-clr);
+}
+
+#main-doc .main-article {    
+    word-wrap: inherit;
+}
+
+
+#main-doc .main-section {
+    margin: 15px auto;    
+    display: inline-block;   
+}
+
+
+#main-doc pre { 
+    white-space: pre-line;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-doc pre code {    
+    display: block ;
+    text-align: left;
+    color: rgb(78, 20, 20);
+    background-color: rgb(160, 156, 156); 
+    border: solid black;   
+    border-radius: 2px;
+    font-family: courier, monospace;
+    padding: 2px ;
+}
+
+/**  Main content **/
+
+
+/******* MEDIA device *******/
+
+@media only screen
+and (min-width : 1025px) {
+    .body-container {
+        width: 100%;
+        height: 100%;      
+        /* Display multi Browsers support*/ 
+        display: -moz-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 35px 20px;
+        position: relative;
+    }
+ }
+
+@media only screen
+and (min-width : 769px)
+and (max-width : 1024px) {
+    .body-container {
+        width: 100%;
+        height: 100%;      
+        /* Display multi Browsers support*/ 
+        display: -moz-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 25px 10px;
+        position: relative;
+    }
+ }
+
+
+@media only screen
+and (min-width : 481px)
+and (max-width : 768px) { 
+    .body-container {
+        width: 100%;
+        height: 100%;      
+        /* Display multi Browsers support*/ 
+        display: -moz-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 25px 10px;
+        position: relative;
+    }
+}
+
+
+@media only screen
+and (min-width : 321px)
+and (max-width : 480px) { 
+    .body-container {
+        width: 100%;
+        height: 100%;      
+        /* Display multi Browsers support*/ 
+        display: -moz-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px 10px;
+        position: relative;
+    }
+}
+
+@media only screen
+and (max-width : 320px) { 
+    .body-container {
+        width: 100%;
+        height: 100%;      
+        /* Display multi Browsers support*/ 
+        display: -moz-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px 10px;
+        position: relative;
+    }
+}
+
+/******* MEDIA device *******/

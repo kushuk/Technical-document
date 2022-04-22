@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Technical Documentation</title>
+        <meta charset="UTF-8"/>        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+        <link href="css/style-technical-doc2.css"  rel="stylesheet"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap"
+              rel="stylesheet"/>         
+    </head>
+
+    <body>        
+        <div class="body-container">
+            <div class="div-indexs">
+                <nav id="navbar">
+                    <header><h1>Documentation of JavaScript</h1></header>
+                    <ul>                
+                        <li><a class="nav-link"
+                           href="#Introduction">Introduction</a></li>
+        
+                        <li><a class="nav-link"
+                           href="#What_is_HTML,_CSS_and_JavaScript_and_why_together?">What is HTML, CSS and JavaScript and why together?</a></li>
+        
+                        <li><a class="nav-link"
+                           href="#What_you_should_already_know">What you should already know</a></li>
+        
+                        <li><a class="nav-link"
+                           href="#JavaScript_or_Java">JavaScript or Java</a></li>
+        
+                        <li><a class="nav-link"
+                           href="#Hello_world!">Hello world!</a></li>                    
+        
+                        <li><a class="nav-link"
+                           href="#Java_Applets_in_HTML">Java Applets in HTML</a></li>
+        
+                        <li><a class="nav-link"
+                           href="#JavaScript_in_HTML">JavaScript in HTML</a></li>
+        
+                        <li><a class="nav-link"
+                            href="#Important_applications_of_Java">Important applications of Java</a></li>
+        
+                        <li><a class="nav-link"
+                            href="#Important_applications_of_JavaScript">Important applications of JavaScript</a></li>                
+                    </ul>            
+                </nav>            
+            </div>
+            <div class="div-documents">
+                <main id="main-doc">     
+                    <article class="main-article">
+                        <header><h1>Technical Documentation of JavaScript Coding</h1></header> 
+                        <section class="main-section" id="Introduction">
+                            <header><h2>Introduction</h2></header>
+                            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. 
+                                Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment 
+                                to provide programmatic control over them. <br>
+                                JavaScript contains a standard library of objects, such as Array, Date, and Math, 
+                                and a core set of language elements such as operators, control structures, and statements.
+                                Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+                            </p>                                               
+                            <p>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). 
+                                For example, client-side extensions allow an application to place elements on an HTML form and 
+                                respond to user events such as mouse clicks, form input, and page navigation. <br><br>
+                                Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. 
+                                For example, server-side extensions allow an application to communicate with a database,
+                                provide continuity of information from one invocation to another of the application, 
+                                or perform file manipulations on a server.      
+                            </p>                  
+                        </section>
+                        <section class="main-section" id="What_is_HTML,_CSS_and_JavaScript_and_why_together?">
+                            <header><h2>What is HTML, CSS and JavaScript and why together?</h2></header>                    
+                            <p><strong>HTML</strong> ( <i>Hyper Text Markup Language</i> ) formats and set Web page's structures. 
+                                It tells the browser when to start and end paragraphs and titles, 
+                                and when to insert images and forms. It can also say what colours to make everything, 
+                                and a few other basic styles like table borders, but in general, this should be done with CSS instead.
+                            </p>    
+                            <p><strong>CSS</strong> ( <i>Cascading Style Sheets</i> ) replaces many parts of HTML and is more customizable. 
+                                It says what fonts, colours, sizes and effects to use including borders and backgrounds.
+                                It also allows you to position parts of the document exactly where you want them.
+                            </p>     
+                            <p><strong>JavaScript</strong> or ( <i>JS</i> ) is a programming language for the Web, that can be used to make parts of your document dynamic. 
+                                You can use it to move parts of your document, change pictures, check forms and write dynamic content.
+                            </p>
+                                
+                            <!--        I have notice that within PRE & CODE tags, it does not disabled the context of the codes !!!!
+                                        You must make adjustment to values of widths & heights, to fit the layout with obcuring other paragraphs.
+                                        Also,  you need to back-spaced the examples within PRE & CODE tags to home positions.        
+                            -->  
+                            <p>Example of three combined, CSS & JavaScript functioning inside HTML.<br> 
+                                The example below "finds" an HTML element (with id="responsive"),
+                                and changes the element content (innerHTML) to "Hello JavaScript":                    
+                            </p>
+                            <pre><code>
+                            &lt;html&gt;
+                                &lt;head&gt;                        
+                                    &lt;title&gt;Example of HTML, CSS and JavaScript combined&lt;/title&gt;   
+                                    &lt;style&gt;
+                                        h1 { background-color: rgb(240, 75, 75); } 
+                                        p { background-color: cornflowerblue; } 
+                                    &lt;/style&gt;                                                                    
+                                &lt;/head&gt;
+                                &lt;body&gt;                                                   
+                                    &lt;h1&gt;The combined Three&lt;/h1&gt;
+                                    &lt;p&gt;My First paragraphs&lt;/p&gt;                
+                                    &lt;p id="responsive"&gt;My First responsive paragraphs&lt;/p&gt; 
+                                    &lt;script&gt; document.getElementById("responsive").innerHTML = "Hello JavaScript"; &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;                    
+                        </code></pre>                        
+                        </section>
+            
+                        <section class="main-section" id="What_you_should_already_know">
+                            <header><h2>What you should already know</h2></header>
+                            <p>This guide assumes you have the following basic background: <br>
+                                A general understanding of the Internet and the World Wide Web (WWW).
+                                Good working knowledge of HyperText Markup Language (HTML).  <br>
+                                Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                            </p>
+                        </section>
+            
+                        <section class="main-section" id="JavaScript_or_Java">
+                            <header><h2>JavaScript or Java</h2></header>
+                            <p>JavaScript and Java Key differences between them is: 
+                                Java is an OOP programming language while Java Script is an OOP scripting language.
+                                Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only. 
+                                Java code needs to be compiled while JavaScript code are all in text.
+                            </p>
+                            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. <br> 
+                                The JavaScript language resembles Java but does not have Java's static typing and strong type checking
+                                JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs 
+                                which was the reason why it was renamed from <span><em>LiveScript to JavaScript</em>.</span><br>
+                                In contrast to Java's <em>compile-time system</em> of classes built by declarations, 
+                                JavaScript supports a <em>runtime system </em> on a small number of data types representing numeric, 
+                                Boolean, and string values. JavaScript has a prototype-based object model instead of 
+                                the more common class-based object model.
+                                The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. 
+                                JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, 
+                                executing as loosely typed methods.<br>                    
+                                JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. 
+                                You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces.
+                                 Variables, parameters, and function return types are not explicitly typed.
+                            </p>
+                            <p>The following statements  shows the difference between Javascript and Java. <br>
+                                This is output statement of JavaScript: </p>   
+                            <pre><code>
+                                function myFunction() {
+                                    document.getElementById("demo1").innerHTML = "Hello World!";
+                                    document.getElementById("demo2").innerHTML = "How are you?";
+                                }
+                            </code></pre>
+                            <p>And this is Java output statement :</p>
+                            <pre><code>
+                                public class Main {
+                                    public static void main(String[] args) {
+                                    System.out.println("Hello World!");
+                                    System.out.println("How are you?");
+                                    }
+                                }
+                            </code></pre>                        
+                        <!-- my little researchs :-) -->
+                        </section>
+            
+                        <section class="main-section" id="Important_applications_of_Java">
+                            <header><h2>Important applications of Java</h2></header>
+                            <p>These are the following important applications of Java language: </p>   
+                            <ul>
+                                <li>Android Apps Enterprise Software </li>
+                                <li>Scientific Computing Applications</li>
+                                <li>Big Data Analytics</li>
+                                <li>Java Programming of Hardware devices</li>
+                                <li>Used for Server-Side Technologies like Apache, JBoss, GlassFish, etc.</li>                        
+                            </ul>                
+                        </section>
+            
+                        <section class="main-section" id="Important_applications_of_JavaScript">  
+                            <header><h2>Important applications of JavaScript</h2></header> 
+                            <p>These are the important applications of JavaScript as following :                      
+                            </p>  
+                            <ul>
+                                <li>Dynamic Single-Page Applications (SPAs)</li>
+                                <li>Front-End technologies like jQuery, AngularJS, Ember.js, 
+                                    ReactJS are based on Java Script</li>
+                                <li>Server-Side technologies like Node.js, Express.js, 
+                                    MongoDB are based on Java Script.</li>
+                                <li>Mobile App Development using PhoneGap, React Native, etc</li>
+                            </ul>                            
+                        </section>
+            
+                        <section class="main-section" id="Hello_world!">                
+                            <header><h2>Hello world!</h2></header> 
+                            <p>To get started with writing JavaScript, open the Scratchpad and 
+                                    write your first "Hello world" JavaScript code:
+                            </p> 
+                            <pre><code>
+                                function greetMe(yourName) { 
+                                    alert("Hello " + yourName); 
+                                }
+                                greetMe("World");
+                            </code></pre>
+                            <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>                       
+                        </section>
+        
+                        <section class="main-section" id="Java_Applets_in_HTML">
+                            <header><h2>Java Applets in HTML</h2></header>
+                            <p>Java program is called <span>"Applets"</span> that can be embbedded onto web page by using HTML tags. 
+                                The <span>applet</span> tag is the simpler but older method, 
+                                and has been superseded by the <span>object</span> tag. 
+                            </p>
+                            <p><strong>Applet</strong> - <code>&lt;applet&gt;&lt;/applet&gt;</code>
+                                You add a Java applet by specifying the attributes of the Applet tag in HTML.                        
+                            </p>
+                            <ul>
+                                <li><span>archive="url"</span> - Address or filename of the Java archive file (.jar) containing the class files.</li>
+                                <li><span>code="?"</span> - Java class to run, eg. java:MyApplet.class</li>
+                                <li><span>width="?"</span> - The width of the applet, in pixels.</li>
+                                <li><span>height="?"</span> - The height of the applet, in pixels.</li> 
+                            </ul>
+                            <p><strong>Object</strong> - <code>&lt;object&gt;&lt;/object&gt;</code>
+                                You add a Java applet by specifying the attributes of the Object tag in HTML.<br>
+                                Only use Object tag instead, for all modern Browsers:                        
+                            </p>
+                            <ul>
+                                <li><span>archive="url"</span> - Address or filename of the Java archive file (.jar) containing the class files.</li>
+                                <li><span>classid="?"</span> - Java class to run, eg. java:MyApplet.class</li>
+                                <li><span>codetype="application/java"</span> - The type of object, use application/java.</li>
+                                <li><span>width="?"</span> - The width of the object, in pixels.</li>
+                                <li><span>height="?"</span> - The height of the object, in pixels.</li>
+                            </ul>
+                            <p>Here is an examples of using both <span>applet</span> and <span>object</span>tags to show an Java applet; </p>
+            
+                           <pre><code>
+                               &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt; Object and Applet tags &lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                       &lt;applet code="Logo.class" archive="Logo.jar" width="50" height="30"&gt;&lt;/applet&gt;  
+                                                    
+                                       &lt;object classid="java:Logo.class" archive="Logo.jar"
+                                            codetype="application/java" width="50" height="30"&gt;&lt;/object&gt;    
+                                    &lt;body&gt;
+                                &lt;html&gt;
+                            </code></pre>
+            
+                            <p>Note: There is now very limited applet support in most modern browsers,
+                                as they no longer support the NPAPI plugin required for showing Java applets.<br>
+                                Oracle has deprecated the Java browser plugin in Java Standard Edition Development Kit 9 (JDK 9). 
+                                Deprecation is a warning for developers to stop using this technology. 
+                                JRE 9 will continue to provide the Java Plugin and support launching applets on browsers that still offer
+                                standard plugin support, but is only available for limited use and not recommended.
+                            </p>                  
+                        </section>
+            
+                        <section class="main-section" id="JavaScript_in_HTML">
+                            <header><h2>JavaScript in HTML</h2></header>
+                            <p>Example 1:  The following example has two JavaScript functions defined in the header, 
+                                which are activated by clicking on the links.
+                            </p>
+                            <pre><code>
+                                &lt;html&gt;
+                                    &lt;head&gt;
+                                        &lt;title&gt;javascript functions defined&lt;/title&gt;
+                                        &lt;script type="text/javascript"&gt; 
+                                            function functionOne() { alert('You clicked the Top text'); } 
+                                            function functionTwo() { alert('You clicked the Bottom text'); }  
+                                        &lt;/script&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;                                
+                                        &lt;p&gt;&lt;a href="#" onclick="functionOne();"&gt;Top Text&lt;/a&gt;&lt;/p&gt;
+                                        &lt;p&gt;&lt;a href="javascript:functionTwo();"&gt;Bottom Text&lt;/a&gt;&lt;/p&gt;
+                                    &lt;body&gt;
+                                &lt;html&gt;
+                            </code></pre>
+                            <p> You can try this code in acion, click the following texts in Capital : </p>
+                            <script> 
+                                function functionOne() { alert('You clicked the Top text'); } 
+                                function functionTwo() { alert('You clicked the Bottom text'); }  
+                            </script>     
+                            <p><a href="#" onclick="functionOne();">TOP TEXT</a></p>
+                            <p><a href="javascript:functionTwo();">BOTTOM TEXT</a></p>
+                                        
+                        </section> 
+                    </article>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" rel="stylesheet"></script>
+    </body>      
+</html>
