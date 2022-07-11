@@ -176,7 +176,7 @@ and (max-width : 1024px) {
  }
 
 
-@media only screen
+@media screen
 and (min-width : 481px)
 and (max-width : 768px) { 
     .body-container {
@@ -195,7 +195,7 @@ and (max-width : 768px) {
 }
 
 
-@media only screen
+@media screen
 and (min-width : 321px)
 and (max-width : 480px) { 
     .body-container {
@@ -213,7 +213,7 @@ and (max-width : 480px) {
     }
 }
 
-@media only screen
+@media  screen
 and (max-width : 320px) { 
     .body-container {
         width: 100%;
