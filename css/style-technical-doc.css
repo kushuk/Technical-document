@@ -99,6 +99,7 @@ body {
 /**  Main content **/
 
 #main-doc {
+    margin: auto;
     padding: 25px;
     min-height: 100%;   
     max-width: 1200px; 
@@ -119,13 +120,14 @@ body {
 
 
 #main-doc pre { 
+    display: inline;
     white-space: pre-line;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 #main-doc pre code {    
-    display: block ;
+    display:block ;
     text-align: left;
     color: rgb(78, 20, 20);
     background-color: rgb(160, 156, 156); 
@@ -205,7 +207,8 @@ and (max-width : 768px) {
         display: -ms-flexbox;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 25px 10px;
         position: relative;
     }
