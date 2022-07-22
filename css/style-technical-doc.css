@@ -99,35 +99,40 @@ body {
 /**  Main content **/
 
 #main-doc {
-    margin: auto;
+    margin: 0 auto;
     padding: 25px;
     min-height: 100%;   
     max-width: 1200px; 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     color: black;
     background-color: var(--bg1-clr);
 }
 
 #main-doc .main-article {    
     word-wrap: inherit;
+    
 }
 
 
 #main-doc .main-section {
     margin: 15px auto;    
-    display: inline-block;   
+    display: flex;   
+    flex-direction: column;
 }
 
 
 #main-doc pre { 
-    display: inline;
+    display: inline-block;
     white-space: pre-line;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: auto 0;
+    text-align: left;
 }
 
 #main-doc pre code {    
-    display:block ;
+    margin: 0;
+    display: inline-block;
     text-align: left;
     color: rgb(78, 20, 20);
     background-color: rgb(160, 156, 156); 
@@ -182,15 +187,15 @@ and (max-width : 1024px) {
 and (min-width : 481px)
 and (max-width : 768px) { 
     .body-container {
-        width: 100%;
-        height: 100%;      
-        /* Display multi Browsers support*/ 
+        will-change: 100%;
+        height: 100%;
         display: -moz-box;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 25px 10px;
         position: relative;
     }
