@@ -128,7 +128,7 @@ body {
 }
 
 #main-doc pre code {  
-    display: contents;
+    display: block;
     color: rgb(78, 20, 20);
     background-color: rgb(135, 124, 124); 
     border: solid black;   
